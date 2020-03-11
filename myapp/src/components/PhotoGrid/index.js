@@ -11,8 +11,9 @@ const PhotoGrid = () => {
     const [cards, setCards] = useState(cardsData)
 
     const cardClicked = event => {
-        console.log('card clicked: ', event.target); //loging the photo info clicked 
-        // const newShuffle = cards.filter(card => cardsData.id !== id)
+        console.log('card clicked: ', event.target); //loging the photo info clicked
+        console.log(Math.floor(Math.random()*13)) 
+        // const newShuffle = cards.(card => cardsData.id !== id)
         // setCards(newShuffle);
     }
 
