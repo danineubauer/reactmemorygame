@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar"
 import MemoryCard from "./components/MemoryCard";
 import Wrapper from "./components/Wrapper";
 import Jumbotron from "./components/Jumbotron";
-import Body from "./components/Body";
+import PhotoGrid from "./components/PhotoGrid";
 import Score from "./components/Score" 
 
 const App = () => { 
@@ -12,7 +12,7 @@ const App = () => {
         <Wrapper>
             <NavBar></NavBar>
             <Jumbotron></Jumbotron>
-            <Body></Body>
+            <PhotoGrid></PhotoGrid>
         </Wrapper>
     )
 }
