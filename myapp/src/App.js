@@ -1,5 +1,4 @@
 import React, { useState } from "react"; 
-import NavBar from "./components/NavBar"
 import MemoryCard from "./components/MemoryCard";
 import Wrapper from "./components/Wrapper";
 import Jumbotron from "./components/Jumbotron";
@@ -10,7 +9,6 @@ const App = () => {
 
     return (
         <Wrapper>
-            <NavBar></NavBar>
             <Jumbotron></Jumbotron>
             <PhotoGrid></PhotoGrid>
         </Wrapper>
