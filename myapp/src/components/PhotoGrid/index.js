@@ -9,19 +9,19 @@ import uuid from "uuid/v1"
 import "./style.css"
 import NavBar from "../NavBar";
 
-
+const temparray=[];
 
 const PhotoGrid = () => {
     const [highCount, sethighCount] = useState(0);
     const [count, setCount] = useState(0);
     const [message, setMessage] = useState("Click image to start");
 
-    const Message = () => { 
+    const Message = (currentstatus) => { 
 
         // handleIncrement increments this.state.count by 1
-        const handleMessages = (currentstatus) => {
+        
           setCount(currentstatus);
-        };
+
     }
 
     //score: 
@@ -29,9 +29,14 @@ const PhotoGrid = () => {
         console.log("conter fx fire") 
 
         // handleIncrement increments this.state.count by 1
-       
-          setCount(count + 1);
-          console.log("counter updated ++");
+        if(count==-1){
+            setCount(0);
+        }
+        else{
+            setCount(count + 1);
+            console.log("counter updated ++");
+        }
+         
 
     }
 
@@ -80,18 +85,35 @@ const PhotoGrid = () => {
         //check if current click is true or not
         if (newListOfFriends[0].clicked === true) {
             alert('game over');
+            
+
+            // Message("Game Over!");
             //chech if cuuscore>highscore, if so update it
             //make score =0 
             if (count > highCount) {
                highScore(count)
             }
 
+            //zero out the current score
+            Counter(-1);
+            //zero out falses
+           // const resetClickBoolean = cardsData.filter(cardData => cardData.clicked == false);
+            const restarra= cardsData.filter(function(cardData){
+                return cardData.clicked=false;
+            })
+            setCards(restarra)
+            console.log("reset", restarra);
 
         } else { 
             alert('keep playing')
-            newListOfFriends[0].clicked = true; 
+            //keeping track of all the id's we set to true.
+             //when the game is over we need to update each associated clicked val back to false
+            temparray.push(id);
+            newListOfFriends[0].clicked = true;
+
             console.log(newListOfFriends[0])
             //update score ++
+            // Message("Keep Playing")
             Counter(count);
 
         }
