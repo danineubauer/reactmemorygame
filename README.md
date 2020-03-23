@@ -2,7 +2,7 @@
 ## by Danielle Neubauer 
 
 > A short memory game built with react featuring beautiful scenic photos from nature.
-> [View in Heroku](https://obscure-hollows-99947.herokuapp.com/)
+>> [View in Heroku](https://obscure-hollows-99947.herokuapp.com/)
 
 This game tests your ability to remember which photos you've clicked on. To win points, click on all the photos only once. If you click on a photo twice, you will loose and the game will restart. 
 
