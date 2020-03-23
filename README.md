@@ -1,31 +1,75 @@
-# Props Calculator
+# React Memory Game 
+> A short memory photo game 
 
-In this activity we will write a component that can perform some arithmetic using passed props and render an element containing the result.
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-## Instructions
+This game tests your ability to remember which photos you've clicked on. 
 
-* Replace your React application's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+![]("./src/assets/Screenshot.png")
 
-* Open your web browser to [localhost:3000](http://localhost:3000). Take a moment to observe the rendered app.
+## Installation
 
-* Open `src/components/Calculator.js` in your editor and take a moment to study the application's code.
+OS X & Linux:
 
-* Write a component named "Math" and render one Math component in the place of each "?" mark.
+```sh
+npm install my-crazy-module --save
+```
 
-* The Math component should perform some arithmetic using 3 props:
+Windows:
 
-  * `num1` - a number
+```sh
+edit autoexec.bat
+```
 
-  * `operator` -  a string representing an arithmetic operator, e.g. "+", "-", "*", "/"
+## Usage example
 
-  * `num2` - a number
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
-* The Math component should render the result of problem in a `span` tag. e.g. 19 + 341 = 360
+_For more examples and usage, please refer to the [Wiki][wiki]._
 
-## Hints
+## Development setup
 
-* Check out [React's documentation for props](https://facebook.github.io/react/docs/components-and-props.html)
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
-## Bonus
+```sh
+make install
+npm test
+```
 
-* Using the [style tag](https://facebook.github.io/react/docs/dom-elements.html#style), set the font-size of the `span` rendered by the `Math` component to be the result of the arithmetic problem in pixels. e.g. the font-size of the `span` rendering the result of "19 + 341 = 360" should be 360 pixels.
+## Release History
+
+* 0.2.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 0.2.0
+    * CHANGE: Remove `setDefaultXYZ()`
+    * ADD: Add `init()`
+* 0.1.1
+    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+* 0.1.0
+    * The first proper release
+    * CHANGE: Rename `foo()` to `bar()`
+* 0.0.1
+    * Work in progress
+
+## Meta
+
+Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+
+Distributed under the XYZ license. See ``LICENSE`` for more information.
+
+[https://github.com/yourname/github-link](https://github.com/dbader/)
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
