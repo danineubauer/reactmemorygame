@@ -3,9 +3,7 @@ import React from "react";
 function NavBar(props) {
     return (
         <ul className="nav justify-content-center">
-            <li className="nav-item">
-                <a className="nav-link active" href="#">Clicky Game</a>
-            </li>
+
             <li class="nav-item">
                 <a className="nav-link disable">Score: {props.score} </a>
             </li>

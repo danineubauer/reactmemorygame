@@ -17,6 +17,12 @@ const PhotoGrid = () => {
     const [message, setMessage] = useState("Click image to start");
 
     const Message = (currentstatus) => { 
+        console.log('adds message')
+        if (count < highCount ) { 
+            setMessage('Keep clicking')
+        } else { 
+            setMessage('you lost')
+        }
 
         // handleIncrement increments this.state.count by 1
         
@@ -30,11 +36,15 @@ const PhotoGrid = () => {
 
         // handleIncrement increments this.state.count by 1
         if(count==-1){
+            setMessage('click image to start new game')
             setCount(0);
+
         }
         else{
             setCount(count + 1);
             console.log("counter updated ++");
+            setMessage('keep clicking images')
+
         }
          
 
