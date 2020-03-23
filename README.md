@@ -7,7 +7,7 @@
 
 This game tests your ability to remember which photos you've clicked on. 
 
-![]("./src/assets/Screenshot.png")
+![](./src/assets/Screenshot.png)
 
 ## Installation
 
