@@ -7,6 +7,9 @@
 
 This game tests your ability to remember which photos you've clicked on. 
 
+<p align="center">
+  <img width="460" height="300" src="./src/assets/Screenshot.png">
+</p>
 ![](./src/assets/Screenshot.png)
 
 ## Installation
