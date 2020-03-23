@@ -1,6 +1,6 @@
 # React Memory Game 
 > A short memory game built with react featuring beautiful scenic photos from nature.
-![](./src/assets/react.png | height=10)
+![](./src/assets/react.png =10x20)
 
 
 [![NPM Version][npm-image]][npm-url]
