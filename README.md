@@ -1,5 +1,5 @@
 # React Memory Game 
-> A short memory photo game 
+> A short memory game with photos
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
